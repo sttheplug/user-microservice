@@ -30,7 +30,7 @@ jobs:
       - name: Build and Push Docker Image
         working-directory: ./user-service
         env:
-          DOCKER_USER: simon123
+          DOCKER_USER: simon
           DOCKER_PASS: Aprilapril23.
         run: |
           echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
